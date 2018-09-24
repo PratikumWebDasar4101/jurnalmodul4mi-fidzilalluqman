@@ -4,7 +4,16 @@
 	<title></title>
 </head>
 <body>
-silakan isi disini
+	<form action="proses.php" method="POST" enctype="multipart/form-data">
+		<p><b>Upload Gambar</b></p>
+		<input type="file" name="filegambar" id="filegambar"><br><br>
+		<p><b>Pilih Hobby</b></p>
+		<input type="checkbox" name="hobby[]" value="Bermain musik"> Bermain musik<br>
+		<input type="checkbox" name="hobby[]" value="Olahraga"> Olahraga<br>
+		<input type="checkbox" name="hobby[]" value="Membaca"> Membaca<br>
+		<input type="checkbox" name="hobby[]" value="Menulis"> Menulis<br><br>
+		<input type="submit" name="submit" value="submit">
+	</form>
 
 </body>
 </html>
